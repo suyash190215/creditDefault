@@ -1,10 +1,10 @@
 # Credit Default Early-Warning System
 
-🎯 **Objective:** Predict customer default risk **30 days in advance** to enable proactive credit risk mitigation.
+**Objective:** Predict customer default risk **30 days in advance** to enable proactive credit risk mitigation.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project builds an **early-warning system** to identify customers likely to default within the next 30 days using historical **credit behavior and utilization patterns**.
 The system prioritizes **high recall at controlled false-positive rates**, making it suitable for real-world credit risk intervention workflows.
@@ -17,7 +17,7 @@ Key outcomes include:
 
 ---
 
-## 🧠 Modeling Approach
+## Modeling Approach
 
 * **Problem Type:** Binary classification (Default / No Default)
 * **Prediction Horizon:** 30 days
@@ -27,11 +27,11 @@ Key outcomes include:
 
 ---
 
-## 🔍 Feature Engineering
+## Feature Engineering
 
 Engineered **20+ risk-sensitive features** capturing behavioral trends and payment stability:
 
-* Payment streaks & missed payment counts
+* Payment streaks and missed payment counts
 * Credit utilization volatility
 * Balance trend deltas
 * Minimum payment adherence ratios
@@ -47,7 +47,7 @@ These enhancements improved **defaulter recall by 18%** compared to baseline mod
 
 ---
 
-## ⚖️ Class Imbalance Strategy
+## Class Imbalance Strategy
 
 Given the natural imbalance in default events:
 
@@ -55,11 +55,11 @@ Given the natural imbalance in default events:
 * Optimized recall under fixed FPR constraints
 * Evaluated using **ROC-AUC and precision–recall tradeoffs**
 
-Resulted in **25% higher recall** at the same false positive rate.
+This resulted in **25% higher recall** at the same false positive rate.
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 
 | Metric                          | Value                |
 | ------------------------------- | -------------------- |
@@ -70,7 +70,7 @@ Resulted in **25% higher recall** at the same false positive rate.
 
 ---
 
-## 🔎 Model Explainability (SHAP)
+## Model Explainability (SHAP)
 
 Used **SHAP values** to:
 
@@ -81,14 +81,3 @@ Used **SHAP values** to:
 This ensured the model remained **interpretable, actionable, and risk-aware**.
 
 ---
-
-## 🚀 Future Improvements
-
-* Incorporate macroeconomic indicators
-* Extend to multi-horizon default prediction
-* Deploy as real-time scoring service
-* Monitor concept drift and recalibrate thresholds
-
----
-
-# creditDefault
